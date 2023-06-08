@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Check R /beta_v0.301</title>
+  <link rel="stylesheet" href="cjs/main.css">
+ </head>
+
+
+
+
+ <body>
+
+
+<!-- Хэдер -->
+
+  <div class="buttons" style="height: 110px; width: 100%; position: absolute; left: 0; right: 0; top: 0%;">
+
+   <button class="b1" style="height: 100%; width: 100%; position: absolute; top: 0; box-sizing: border-box;">Check R</button>
+
+  </div>
+
+
+<!-- таблица 1 (дол.; стаж; Прем; доп. слож) --> 
+
+  <div class="sliders" style="height: 340px; width: 100%; position: absolute; top: 100px;">
+
+
+   <table border=0 solid="white" height="100%" width="100%" class="tb">
+    <colgroup>
+        <col width="50%">
+        <col width="50%">
+    </colgroup>
+    <tbody style="height: 100%;">
+      <tr style="height: 30%;">
+        <td>
+          <label class="tx1">Дол.:</label>
+        </td>
+
+        <td>
+          <label class="tx1">Стаж:</label>
+        </td>
+      </tr>
+
+
+      <tr style="height: 20%;">
+        <td>
+          <select id="dols" class="sel1" onchange="updateValue()">
+              <option value ="1" class="tx2">О. 1 к.</option>
+              <option value ="2" class="tx2">~С. О. 2 к.</option>
+              <option value ="3" class="tx2">С. О. 4 к.</option>
+              <option value ="4" class="tx2">О. 5 к.</option>
+              <option value ="5" class="tx2" disabled>О. 7 к.</option>
+              <option value ="6" class="tx2">О. 4 р. (old)</option>
+              <option value ="7" class="tx2">О. 5 р. (old)</option>
+              <option value ="8" class="tx2">С. О.(old)</option>
+            </select>
+          </td>
+
+          <td>
+            <select id="stas" class="sel1" onchange="updateValue3()">
+              <option value ="1" class="tx2">До 2 лет</option>
+              <option value ="2" class="tx2">От 2 до 5 лет</option>
+              <option value ="3" class="tx2">От 5 до 10 лет</option>
+              <option value ="4" class="tx2">От 10 до 15 лет</option>
+              <option value ="5" class="tx2">От 15 лет</option>
+            </select>
+          </td>
+        </tr>
+
+
+        <tr style="height: 30%;">
+          <td>
+            <label class="tx1">Прем.:</label>
+          </td>
+
+          <td>
+            <label class="tx1">Доп. слож.:</label>
+          </td>
+        </tr>
+
+        <tr style="height: 20%;">
+          <td>
+            <select id="prem" class="sel1"  onchange="updateValue1()">
+              <option value ="1" class="tx2">0%</option>
+              <option value ="2" class="tx2">5%</option>
+              <option value ="3" class="tx2">10%</option>
+              <option value ="4" class="tx2">15%</option>
+              <option value ="5" class="tx2">20%</option>
+              <option value ="6" class="tx2">25%</option>
+              <option value ="7" class="tx2">30%</option>
+              <option value ="8" class="tx2">35%</option>
+              <option value ="9" class="tx2" selected>40% (default)</option>
+            </select>
+          </td>
+
+          <td>
+            <select id="dprem" class="sel1" onchange="updateValue2()">
+              <option value ="1" class="tx2">0% (default)</option>
+              <option value ="2" class="tx2">5%</option>
+              <option value ="3" class="tx2">10%</option>
+              <option value ="4" class="tx2">15%</option>
+              <option value ="5" class="tx2">20%</option>
+              <option value ="6" class="tx2">25%</option>
+              <option value ="7" class="tx2">30%</option>
+              <option value ="8" class="tx2">35%</option>
+              <option value ="9" class="tx2">40%</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+
+
+<!-- таблица Кол-во час. -->
+
+  <div style="height: 100px; width: 100%; top: 470px; position: absolute;">
+
+
+    <table border=0 solid white class=tb1 width="430px" height="160px" style="float: right; margin-right: 10%;">
+      <colgroup>
+        <col width="400px">
+        <col width="190px">
+      </colgroup>
+      <tbody align="right" style="height: 100%;" >
+        <tr style="height: 80px;">
+          <td>
+            <label for="hrs" class="tx3">Кол. час.:</label>
+          </td>
+
+          <td>
+            <input type="number" class="inhr" value="0" maxlength="3" name="hrs" id="hrs" onchange="updateHr()">
+          </td>
+        </tr>
+
+
+        <tr style="height: 80px;">
+          <td>
+            <label for="nhrs" class="tx3">Н. час.:</label>
+          </td>
+
+          <td>
+            <input type="number" class="inhr" value="0" maxlength="3" name="nhrs" id="nhrs" onchange="updateNhr()">
+          </td>
+        </tr>
+
+
+        <tr style="height: 80px;">
+          <td>
+            <label for="prhrs" class="tx3">Пр. час.:</label>
+          </td>
+
+          <td>
+            <input type="number" class="inhr" value="0" maxlength="3" name="prhrs" id="prhrs" onchange="updatePhr()">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+
+
+<!-- Без выч. -->
+
+  <div style="height: 30px; width: 100%; position: absolute; top: 870px;">
+
+
+   <table border=0 solid green height="50%" width="450px" style="background: black; float: right; margin-right: 5%;">
+   <colgroup>
+    <col width="43%">
+    <col width="30%">
+   </colgroup>
+   <tbody align="right">
+     <tr>
+       <td>
+         <label class="tx7">Без выч.:</label>
+       </td>
+
+       <td>
+         <input type="text" value="0" style="height: 100%;" name="out" id="outpre" readonly>
+       </td>
+     </tr>
+    </tbody>
+   </table>
+
+
+  </div>
+
+
+<!-- 13. -->
+
+  <div style="height: 30px; width: 100%; position: absolute; top: 950px;">
+
+
+   <table border=0 solid green height="50%" width=250px" style="background: black; float: right; margin-right: 5%;">
+   <colgroup>
+    <col width="43%">
+    <col width="30%">
+   </colgroup>
+   <tbody align="right">
+     <tr>
+       <td>
+         <label class="tx7">13:</label>
+       </td>
+
+       <td>
+         <input type="text" value="0" style="height: 100%;" name="out" id="outpree" readonly>
+       </td>
+     </tr>
+    </tbody>
+   </table>
+
+
+  </div>
+
+
+
+
+<!-- к выпл. -->
+
+  <div style="height: 50px; width: 100%; position: absolute; top: 1050px;">
+
+
+   <table border=0 solid green height="50%" width="860px" style="background: white; float: right; margin-right: 5%;">
+   <colgroup>
+    <col width="350px">
+    <col width="440px">
+   </colgroup>
+   <tbody align="right">
+     <tr>
+       <td>
+         <label class="tx4">К выпл.:</label>
+       </td>
+
+       <td>
+         <input type="text" value="0" style="height: 100%;" name="out" id="output" readonly>
+       </td>
+     </tr>
+    </tbody>
+   </table>
+
+
+  </div>
+
+
+<!-- нижняя линия -->  
+
+  <div class="line"></div>
+
+
+<!-- верхняя линия -->  
+
+  <div class="linee"></div>
+
+
+<!--  Кнопка обновления результата
+
+  <div style="height: 10%; width: 100%; position: absolute; left: 0; right: 0; top: 1200px; text-align: center;">
+
+
+   <button class="br" onclick="recalculate()" style="height: 250px; width: 80%; display: inline-block; top: 0; display: block; box-sizing: border-box; transform: translateX(12%);">\\Подсчитать//</button>
+
+
+  </div>
+-->
+
+
+<!-- прямоугольник за детализацией -->  
+
+  <div id="rectangle"></div>
+
+
+<!-- текст детализации -->    
+
+  <div class="det" style="height: 50px; width: 100%; position: absolute; top: 1250px;">
+   <div class="tx5">
+    Детализация (Скоро)
+   </div>
+   <div class="tx6">
+    <br>////////////////////////////////////////<br>////////////////////////////////////////
+    <br>////////////////////////////////////////<br>////////////////////////////////////////
+    <br>////////////////////////////////////////<br>////////////////////////////////////////
+   </div>
+  </div>
+
+
+<!-- QR -->  
+
+   <div class="qr">
+
+  <img src="cjs/IMG_20230521_101431_274.jpg" width="600px" height="600px">
+
+
+   </div>
+  </div>
+
+
+
+
+
+
+  <script src="cjs/mainj.js"></script>
+ </body>
+</html>
