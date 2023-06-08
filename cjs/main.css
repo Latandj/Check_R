@@ -1,0 +1,273 @@
+@font-face {
+	font-family: 'thin_pixel-7';
+	src: url(thin_pixel-7.ttf);
+}
+
+@font-face {
+  font-family: 'RIMMA_SANS-BOLD';
+  src: url('RIMMA_SANS-BOLD.ttf.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Groteskly Yours - Rothek ExtraLight';
+  src: url('Groteskly Yours - Rothek ExtraLight.otf') format('opentype');
+}
+
+
+
+.hhh {
+ width: 50%;
+ height: 30%;
+ font-size: 300%;
+}
+
+.xxx {
+ height: 200%;
+ width: 400%;
+ left: 40%;
+ top: 40%;
+ position: fixed;
+}
+
+
+body {
+ background: black;
+}
+
+.b1 {
+  background: white;
+  border: 5px solid white;
+  margin: 0;
+  padding: 0%;
+  display: inline-block;
+  font-family: 'RIMMA_SANS-BOLD';
+  color: black;
+  line-height: 0.5;
+  font-size: 800%; /*размер шрифта*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tx1 {
+  font-family: 'RIMMA_SANS-BOLD';
+  font-size: 350%; /*700*/
+  color: white;
+  position: relative;
+  display: block;
+  transform: translateY(20%);
+}
+
+.tx2 {
+  font-family: 'Groteskly Yours - Rothek ExtraLight';
+  background-color: #363636;
+  font-size: 30px;
+  color: white;
+  position: relative;
+}
+
+.tx3 {
+  font-family: 'Groteskly Yours - Rothek ExtraLight';
+  font-size: 400%;
+  color: white;
+  position: relative;
+}
+
+.tx4 {
+  font-family: 'RIMMA_SANS-BOLD';
+  font-size: 370%;
+  color: black;
+}
+
+.tx5 {
+  font-family: 'RIMMA_SANS-BOLD';
+  font-size: 300%; /*700*/
+  color: grey;
+  position: relative;
+  align-items: center;
+	text-align: center
+
+}
+
+.tx6 {
+  font-family: 'Groteskly Yours - Rothek ExtraLight';
+  font-size: 400%; /*700*/
+  color: gray;
+  position: relative;
+  align-items: center;
+  text-align: center
+}
+
+.tx7 {
+  font-family: 'Groteskly Yours - Rothek ExtraLight';
+  font-size: 300%;
+  color: grey;
+}
+
+.ed {
+  position: fixed;
+  button: 10%;
+}
+
+.tb {
+  text-align: center;
+  /*background: black; */
+  border: 0px solid white;
+}
+
+.tb1 {
+ background: black;
+}
+
+.br {
+font-family: 'thin_pixel-7';
+ font-size: 1000%;
+ text-align: center;
+ /*vertical-align: middle;*/
+ padding: 6%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.inhr {
+ background-color: #363636;
+ color: white;
+ border-radius: 8px;
+ border: 0;
+ height: 50px;
+ width: 130px;
+ font-family: 'Groteskly Yours - Rothek ExtraLight';
+ font-size: 400%;
+}
+
+.sel {
+ height: 100%;
+ width: 60%;
+ font-size: 100%;
+}
+
+#outpre {
+ border: 0;
+ color: white;
+ background: black;
+ height: 100%;
+ width: 235px;
+ /* display: inline-block; */
+ font-family: 'Groteskly Yours - Rothek ExtraLight';
+ font-size: 300%;
+}
+
+#outpree {
+ border: 0;
+ color: white;
+ background: black;
+ height: 100%;
+ width: 235px;
+ /* display: inline-block; */
+ font-family: 'Groteskly Yours - Rothek ExtraLight';
+ font-size: 300%;
+}
+
+#output {
+ border: 0;
+ color: black;
+ background: white;
+ height: 100%;
+ width: 440px;
+ /* display: inline-block; */
+ font-family: 'RIMMA_SANS-BOLD';
+ font-size: 370%;
+}
+
+
+#rectangle {
+	  top: 1130px;
+    width: 900px;
+    height: 680px;
+		position: relative;
+		margin: 0 auto;
+		transform: translateY(-10%);
+    transform: translateX(1%);
+    background: #0d0d0d;
+}
+
+.line {
+ top: 850px;
+  position: absolute;
+  background: linear-gradient(to left, #0d0d0d, #363636);
+  border-radius: 18px;
+  height: 15px;
+  width: 90%;
+  right: 0;
+}
+
+.linee {
+ top: 451px;
+  position: absolute;
+  background: linear-gradient(to right, #0d0d0d, #363636);
+  border-radius: 18px;
+  height: 15px;
+  width: 90%;
+  left: 0;
+}
+
+.sel1 {
+  height: 80%;
+  width: 10%;
+  border: 0px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 0px;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  /*font-family: 'thin_pixel-7';*/
+  font-size: 300%;
+}
+.sel1, .sel1 select { height: 100%; width: 90%;}
+select:focus { outline: none; }
+.sel1 select {
+  height: 80%;
+  padding: 5px 0 5px 5px;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  width: 3%;
+}
+
+@-moz-document url-prefix(){
+  .styled-select select { width: 110%; }
+}
+
+ select::-ms-expand { display: none; }
+
+_:-o-prefocus, .selector {
+  .sel { background: none; }
+  }
+
+
+.qr {
+  top: 1900px;
+  position: absolute;
+  background: white;
+  border-radius: 20px;
+  height: 680px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+    margin: auto;
+  }
+
+.sel1 {
+    font-family: 'Groteskly Yours - Rothek ExtraLight';
+    border-radius: 8px;
+    color: white;
+    background-color: #363636;
+    font-size: 50px;
+    height: 55px;
+    width: 400px;
+    text-align: center;
+  }
