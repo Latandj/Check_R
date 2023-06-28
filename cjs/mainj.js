@@ -5,21 +5,21 @@
 //}
 
 
-const hrst_1k = 101.09; //часовая ставка охранника 1 категории.
+const hrst_1k = 101.09; //ч ст ох 1 к
 
-const hrst_st2k = 120; //часовая ставка старшего охранника 2 категории (5 разряд).
+const hrst_st2k = 120; //ч ст ст ох 2 к (5 р).
 
-const hrst_st4k = 146.58; //часовая ставка старшего охранника 4 категории (старший абк).
+const hrst_st4k = 146.58; //ч ст ст оx 4 к (ст абк).
 
-const hrst_5k = 161.75; //часовая ставка охранника 5 категории (старший мобилки).
+const hrst_5k = 161.75; //ч ст ох 5 к (ст моб).
 
-const hrst_7k = 180.00; //часовая ставка охранника 7 категории (оперативный дежурный).
+const hrst_7k = 180.00; //ч ст ох 7 к (оп д).
 
-const hrst_4r = 90.51; //часовая ставка охранника 4 разряда (старое).
+const hrst_4r = 90.51; //ч ст ох 4 р (старое).
 
-const hrst_5r = 101.18; //часовая ставка охранника 5 разряда (старое).
+const hrst_5r = 101.18; //ч ст ох 5 р (старое).
 
-const hrst_str = 141.39; //часовая ставка старшего охранника 4 разряда (старое).
+const hrst_str = 141.39; //ч ст ст ох 4 р (старое).
 
 
 var choice = 1;
@@ -67,12 +67,12 @@ else if(choice == 8) {st_vibor = hrst_str}
 else {console.log("Stavka shit, brah")}
 
 const podnst = 0.4
-const nst = st_vibor * podnst; //ночная ставка
+const nst = st_vibor * podnst; //ноч ст
 
 
-var hr = 0; //количество часов.
-var nhr = 0; //количество ночных часов.
-var phr = 0; //количество праздничных часов.
+var hr = 0; //кол ч.
+var nhr = 0; //кол н ч.
+var phr = 0; //кол пр ч.
 
 
 var hrsInput = document.getElementById("hrs");
@@ -125,10 +125,10 @@ inputs.forEach(input => {
 // новое!!
 
 var rrpr = 0.4;
-var ddpr = 0.0; //премия за доп. сложность.
+var ddpr = 0.0; //пр за доп. сл.
 var staaw = 0.0; //% стажа.
-var skf = 0.8; //северный коэффициент.
-var rkf = 0.7; //районный коэффициент.
+var skf = 0.8; //с ко.
+var rkf = 0.7; //р ко.
 
 
 //function updateValue() {
@@ -169,19 +169,19 @@ else {console.log("staw shit, brah")}
 
 
 
-var ddh = 0; //дополнительный доход.
+var ddh = 0; //доп дох.
 
 
 //далее расчёт:.
-var a1 = st_vibor * hr; //часовая оплата общ.
-var s1 = staaw * a1; // стаж * на количество часов
-var a2 = nst * nhr; //часовая оплата за ночные часы
-var a3 = st_vibor * phr; //часовая оплата за праздничные часы.
+var a1 = st_vibor * hr; //ч опл общ.
+var s1 = staaw * a1; // стаж * на кол ч
+var a2 = nst * nhr; //ч опл за н ч
+var a3 = st_vibor * phr; //ч опл за пр ч.
 
-var aa4 = a1 * ddpr; //премия доп сложность.
-var a4 = (a1 + a2 + aa4 + s1) * rrpr; //премия от предприятия.
-var a5 = (a1 + a2 + a3 + a4 + aa4 + s1) * rkf; //районный коэффициент.
-var a6 = (a1 + a2 + a3 + a4 + aa4 + s1) * skf; //северный коэффициент.
+var aa4 = a1 * ddpr; //пр доп сл.
+var a4 = (a1 + a2 + aa4 + s1) * rrpr; //пр от пр.
+var a5 = (a1 + a2 + a3 + a4 + aa4 + s1) * rkf; //р ко.
+var a6 = (a1 + a2 + a3 + a4 + aa4 + s1) * skf; //с ко.
 
 
 var dopdoh = 0;
