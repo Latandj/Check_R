@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Check R /beta_v0.301</title>
+  <title>Проверка /beta_v0.301</title>
   <link rel="stylesheet" href="cjs/main.css">
  </head>
 
@@ -13,7 +13,6 @@
 
 <!-- Хэдер -->
 
-
   <div class="buttons" style="height: 110px; width: 100%; position: absolute; left: 0; right: 0; top: 0%;">
 
    <button class="b1" style="height: 100%; width: 100%; position: absolute; top: 0; box-sizing: border-box;">Check R</button>
@@ -21,7 +20,7 @@
   </div>
 
 
-<!-- таблица 1 (дол.; стаж; Прем; доп. слож) --> 
+<!-- таблица 1 (дол.; стаж; Прем; доп. слож) -->
 
   <div class="sliders" style="height: 340px; width: 100%; position: absolute; top: 100px;">
 
@@ -247,12 +246,12 @@
   </div>
 
 
-<!-- нижняя линия -->  
+<!-- нижняя линия -->
 
   <div class="line"></div>
 
 
-<!-- верхняя линия -->  
+<!-- верхняя линия -->
 
   <div class="linee"></div>
 
@@ -269,31 +268,150 @@
 -->
 
 
-<!-- прямоугольник за детализацией -->  
+<!-- прямоугольник за детализацией -->
 
   <div id="rectangle"></div>
 
 
-<!-- текст детализации -->    
+  <div style="height: 50px; width: 100%; position: absolute; top: 1050px;">
 
-  <div class="det" style="height: 50px; width: 100%; position: absolute; top: 1250px;">
+
+<!-- детализация -->
+
+
+ <div style="height: 400px; width: 90%; position: absolute; top: 260px;">
+
+   <table border=1 solid grey height="400px" width="100%" style="background: #0d0d0d; margin-right: 5%; margin-left: 5%;">
+   <colgroup>
+    <col width="400px">
+    <col width="150px">
+    <col width="350px">
+   </colgroup>
+   <tbody align="left">
+     <tr>
+       <td>
+         <label class="tx8">Час тар..:</label>
+       </td>
+
+       <td align="right">
+         <input type="text" class="det" value="0" name="out" id="khrs" readonly>
+       </td>
+
+       <td align="right">
+         <input type="text" class="deta" value="0" name="out" id="shrs" readonly>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <label class="tx8">Н. час. тар.:</label>
+       </td>
+
+       <td align="right">
+         <input type="text" class="det" value="0" name="out" id="knhrs" readonly>
+       </td>
+
+       <td align="right">
+         <input type="text" class="deta" value="0" name="out" id="snhrs" readonly>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <label class="tx8">Пр. час. тар.:</label>
+       </td>
+
+       <td align="right">
+         <input type="text" class="det" value="0" name="out" id="kphrs" readonly>
+       </td>
+
+       <td align="right">
+         <input type="text" class="deta" value="0" name="out" id="sphrs" readonly>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <label class="tx8">Стаж:</label>
+       </td>
+
+       <td align="right">
+         <input type="text" class="det" value="0" name="out" id="ptstw" readonly>
+       </td>
+
+       <td align="right">
+         <input type="text" class="deta" value="0" name="out" id="sstw" readonly>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <label class="tx8">Доп. слож.:</label>
+       </td>
+
+       <td align="right">
+         <input type="text" class="det" value="0" name="out" id="dslow" readonly>
+       </td>
+
+       <td align="right">
+         <input type="text" class="deta" value="0" name="out" id="sdslow" readonly>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <label class="tx8">Прем.:</label>
+       </td>
+
+       <td align="right">
+         <input type="text" class="det" value="0" name="out" id="ppprem" readonly>
+       </td>
+
+       <td align="right">
+         <input type="text" class="deta" value="0" name="out" id="sppprem" readonly>
+       </td>
+     </tr><tr>
+       <td>
+         <label class="tx8">Р. К..:</label>
+       </td>
+
+       <td align="right">
+         <input type="text" class="det" value="0" name="out" id="rrrkf" readonly>
+       </td>
+
+       <td align="right">
+         <input type="text" class="deta" value="0" name="out" id="srrrkf" readonly>
+       </td>
+     </tr>
+     <tr>
+       <td>
+         <label class="tx8">С. К.:</label>
+       </td>
+
+       <td align="right">
+         <input type="text" class="det" value="0" name="out" id="ssskf" readonly>
+       </td>
+
+       <td align="right">
+         <input type="text" class="deta" value="0" name="out" id="sssskf" readonly>
+       </td>
+     </tr>
+    </tbody>
+   </table>
+
+
+  </div>
+
+
+<!-- текст детализации -->
+
+  <div class="det" style="height: 50px; width: 100%; position: absolute; top: 150px; background-color: black;">
    <div class="tx5">
-    Детализация (Скоро)
-   </div>
-   <div class="tx6">
-    <br>////////////////////////////////////////<br>////////////////////////////////////////
-    <br>////////////////////////////////////////<br>////////////////////////////////////////
-    <br>////////////////////////////////////////<br>////////////////////////////////////////
-
+    Детализация
    </div>
   </div>
 
 
-<!-- QR -->  
+<!-- QR -->
 
    <div class="qr">
 
-  <img src="cjs/qrlink.jpg" width="600px" height="600px">
+  <img src="cjs/IMG_20230521_101431_274.jpg" width="600px" height="600px">
 
 
    </div>
