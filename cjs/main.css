@@ -81,7 +81,7 @@ body {
 
 .tx5 {
   font-family: 'RIMMA_SANS-BOLD';
-  font-size: 300%; /*700*/
+  font-size: 200%; /*700*/
   color: grey;
   position: relative;
   align-items: center;
@@ -102,6 +102,18 @@ body {
   font-family: 'Groteskly Yours - Rothek ExtraLight';
   font-size: 300%;
   color: grey;
+}
+
+.tx8 {
+  font-family: 'Groteskly Yours - Rothek ExtraLight';
+  font-size: 300%;
+  color: white;
+}
+
+.tx9 {
+  font-family: 'Groteskly Yours - Rothek ExtraLight';
+  font-size: 300%;
+  color: white;
 }
 
 .ed {
@@ -180,7 +192,7 @@ font-family: 'thin_pixel-7';
  font-size: 370%;
 }
 
-
+/*
 #rectangle {
 	  top: 1130px;
     width: 900px;
@@ -191,6 +203,7 @@ font-family: 'thin_pixel-7';
     transform: translateX(1%);
     background: #0d0d0d;
 }
+*/
 
 .line {
  top: 850px;
@@ -247,7 +260,7 @@ _:-o-prefocus, .selector {
 
 
 .qr {
-  top: 1900px;
+  top: 850px;
   position: absolute;
   background: white;
   border-radius: 20px;
@@ -271,3 +284,47 @@ img {
     width: 400px;
     text-align: center;
   }
+
+.det {
+	border: 5;
+  color: black;
+  background: white;
+  height: 100%;
+  width: 150px;
+  /* display: inline-block; */
+  font-family: 'RIMMA_SANS-BOLD';
+  font-size: 80%;
+}
+
+.deta {
+	border: 5;
+  color: black;
+  background: white;
+  height: 100%;
+  width: 200px;
+  /* display: inline-block; */
+  font-family: 'RIMMA_SANS-BOLD';
+  font-size: 200%;
+}
+
+.det {
+ border: 0;
+ color: gray;
+ background: #0d0d0d;
+ height: 100%;
+ width: 150px;
+ /* display: inline-block; */
+ font-family: 'Groteskly Yours - Rothek ExtraLight';
+ font-size: 250%;
+}
+
+.deta {
+ border: 0;
+ color: gray;
+ background: #0d0d0d;
+ height: 100%;
+ width: 350px;
+ /* display: inline-block; */
+ font-family: 'RIMMA_SANS-BOLD';
+ font-size: 250%;
+}
