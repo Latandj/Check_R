@@ -127,8 +127,8 @@ inputs.forEach(input => {
 var rrpr = 0.4;
 var ddpr = 0.0; //премия за доп. сложность.
 var staaw = 0.0; //% стажа.
-const skf = 0.8; //северный коэффициент.
-const rkf = 0.7; //районный коэффициент.
+var skf = 0.8; //северный коэффициент.
+var rkf = 0.7; //районный коэффициент.
 
 
 //function updateValue() {
@@ -195,6 +195,7 @@ var out = pre - preout;
 a1 = a1.toFixed(2);
 a2 = a2.toFixed(2);
 a3 = a3.toFixed(2);
+s1 = s1.toFixed(2);
 aa4 = aa4.toFixed(2);
 a4 = a4.toFixed(2);
 a5 = a5.toFixed(2);
@@ -224,6 +225,8 @@ console.log("13%" + " - " + preout);
 console.log(choice);
 console.log(rrpr);
 console.log(ddpr);
+console.log(skf + " " + "сев коэф");
+console.log(rkf + " " + "рай коэф");
 
 
 document.getElementById("outpre").value = pre;
@@ -231,6 +234,38 @@ document.getElementById("outpre").value = pre;
 document.getElementById("outpree").value = preout;
 
 document.getElementById("output").value = out;
+
+document.getElementById("khrs").value = hr;
+
+document.getElementById("shrs").value = a1;
+
+document.getElementById("knhrs").value = nhr;
+
+document.getElementById("snhrs").value = a2;
+
+document.getElementById("kphrs").value = phr;
+
+document.getElementById("sphrs").value = a3;
+
+document.getElementById("ptstw").value = staaw;
+
+document.getElementById("sstw").value = s1;
+
+document.getElementById("dslow").value = ddpr;
+
+document.getElementById("sdslow").value = aa4;
+
+document.getElementById("ppprem").value = rrpr;
+
+document.getElementById("sppprem").value = a4;
+
+document.getElementById("rrrkf").value = rkf;
+
+document.getElementById("srrrkf").value = a5;
+
+document.getElementById("ssskf").value = skf;
+
+document.getElementById("sssskf").value = a6;
 }
 
 
